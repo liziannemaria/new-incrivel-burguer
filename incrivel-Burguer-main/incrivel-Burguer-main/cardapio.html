@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+</html>
+
+<head>
+    <meta charset="UTF-">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--chamando a página de icons-->
+    <link rel="stylesheet" href="incrivelburguer.css">
+    <link rel="stylesheet" href="cardapio.css"> <!--chamando o arquivo css-->
+    <title>Incrível Burguer</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            
+            </div>
+            
+           
+            <nav>
+                <ul class="list-menu"></ul>
+                <li><a class="link_menu" href="incrivelburguer.html">Início</a></li> <!---botao home-->
+
+                <li><a class="link_menu" href="cardapio.html">Cárdapio</a></li> <!--saiba mais para produtos  -->
+
+                <li><a class="link_menu" href="https://maps.app.goo.gl/97R9wDPxEzRQo1Ys5">Endereço</a></li> <!--sobre a empresa-->
+
+                <li><a class="link_menu" href="https://wa.me/c/553194861306"><i class="bi bi-whatsapp"></i></a></li> <!--icon wpp-->
+
+                <li><a class="link_menu" href="https://www.instagram.com/incrivel_burgueroficial/"><i class="bi bi-instagram"></i></a></li> <!--icon instagram-->
+
+                <li><a class="link_menu" href="https://www.ifood.com.br/delivery/ribeirao-das-neves-mg/incrivel-burguer-e-acai-maracana-justinopolis/f118c326-be27-4c8b-808e-56d4248539d5"><i class="bi bi-check2-square"></i></a></li> <!--icon para ifood-->
+
+                
+
+            </nav>
+            </div>
+    </header>
+    <div class="carrossel">
+
+
+        <div class="carrossel-container">
+
+
+            <div class="carrossel-item">
+                <img src="cheddar.jpeg" alt="Incrível">
+                <h3>Incrível</h3>
+                <p>Pão de brioche, blend 150g e 1x cheddar</p>
+                <a class="pedido" href="https://www.whatsapp.com/catalog/553194861306/?app_absent=0">Faça seu pedido aqui</a>
+            </div>
+            <div class="carrossel-item">
+                <img src="bacon.jpeg" alt="Incrível cheddar">
+                <h3>Incrível Cheddar</h3>
+                <p>Pão de brioche, blend 150g 1x cheddar,fatias de bacon, salada e molho incrível</p>
+                <a class="pedido" href="https://www.whatsapp.com/catalog/553194861306/?app_absent=0">Faça seu pedido aqui</a>
+            </div>
+            <div class="carrossel-item">
+                <img src="bacon.jpeg" alt="Incrível Bacon">
+                <h3>Incrível Bacon</h3>
+                <p>Pão de brioche, blend 150g e 1x cheddar, </p>
+                <a class="pedido" href="https://www.whatsapp.com/catalog/553194861306/?app_absent=0">Faça seu pedido aqui</a>
+            </div>
+            <div class="carrossel-item">
+                <img src="tasty.jpeg" alt="Picanha tasty">
+                <h3>Picanha tasty</h3>
+                <p>Pão de brioche, blend de picanha 150g, 2x cheddar, fatias de bacon, salada, cebola e molho
+                    incrível </p>
+                    <a class="pedido" href="https://www.whatsapp.com/catalog/553194861306/?app_absent=0">Faça seu pedido aqui</a>
+            </div>
+            <div class="carrossel-item">
+                <img src="doublecheddar.jpeg" alt=" Incrível Double cheddar">
+                <h3> Incrível Double Cheddar</h3>
+                <p>Pão de brioche, 2 blend bovino 150g, 2x cheddar, 1 ovo, fatias de bacon, salada, cebola e
+                    molho incrível </p>
+                    <a class="pedido" href="https://www.whatsapp.com/catalog/553194861306/?app_absent=0">Faça seu pedido aqui</a>
+            </div>
+            <div class="carrossel-item">
+                <img src="chicken.jpeg" alt="Incrível chicken">
+                <h3>Incrível Chicken</h3>
+                <p>Pão de brioche, blend de frango 150g, 1x cheddar, bacon, salada e molho incrível </p>
+                <a class="pedido" href="https://www.whatsapp.com/catalog/553194861306/?app_absent=0">Faça seu pedido aqui</a>
+            </div>
+        </div>
+
+
+        <div class="navegacao">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    const carrosselContainer = document.querySelector('.carrossel-container');
+    const items = document.querySelectorAll('.carrossel-item');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    let currentIndex = 0;
+
+    function updateCarrossel() {
+        const itemWidth = items[0].clientWidth + 20; // largura do item + margem
+        carrosselContainer.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < items.length - 1) {
+            currentIndex++;
+            updateCarrossel();
+        }
+    });
+
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarrossel();
+        }
+    });
+</script>
+
+
+<footer class="cardapio">
+    <em>Copyright © 2024 by Lizianne Maria </em><br>
+    <a href="https://github.com/liziannemaria" target="_blank" class="bi bi-github"></a>
+    <a href="https://www.instagram.com/lizianne_maria?igsh=MWc5bWJ0eWk2aHJvOQ==" target="_blank"
+        class="bi bi-instagram"></a>
+</footer>
+
+
+
+</html>
