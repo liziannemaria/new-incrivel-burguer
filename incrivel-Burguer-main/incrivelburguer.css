@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@media (max-width: 768px){
+    #seçao {
+      width: 100%;
+    }
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+}
+
+
+nav {
+    display: flex;
+    /*justify-content: center;  Centraliza horizontalmente */
+    height: 60px; /* Defina a altura conforme necessário */
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-right: 50px;
+    text-decoration: none;
+} 
+.list-menu {
+    list-style-type: none; /* Remove os marcadores da lista */
+    display: flex; /* Coloca os itens lado a lado */
+    cursor: pointer;
+}
+
+
+a.link_menu {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    display: flex; /* Torna o link flexível */
+    align-items: center; /* Alinha o texto e os ícones verticalmente */
+    text-transform: uppercase;
+    transition: all 200ms ease-in;
+}
+a.link_menu:hover {
+    color: yellow;
+}
+
+/* Estilo para os ícones dentro dos links */
+.list-menu li a i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+body{
+    width: 100vw;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+/*menu*/
+.cabecalho {
+    width: 100vw; /*largura*/
+    height: 70px; /*altura*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fe2120;
+}
+
+.logo{
+   
+    height: 160px;
+    width: 100px;
+    display:flex;
+    justify-content: center;
+    margin: 35px 0 0 25px;
+    object-fit: cover;
+}
+
+.first-section{
+    margin-top: 0%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(29, 29, 29,0.8),rgba(29, 29, 29,0.8)),url("fundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-position-y: 0px;
+    width: 100vw;
+    margin: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedido{
+    cursor:pointer;
+    padding: 15px;
+    align-items: center;
+    border-radius: 16px;
+    background-color: rgb(255, 217, 0);
+    bottom: hover;
+    color: black;
+
+}
+
+footer.home {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    padding: 2vh 0;
+    color: rgb(45, 62, 81);
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 2px 2px #fa0000;
+    z-index: 5;
+ }
+
+ footer.cardapio {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    padding: 2vh 0;
+    color: rgb(45, 62, 81);
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 2px 2px #fa0000;
+    z-index: 5;
+    margin-top: 12vh;
+ }
+ 
+ a.links {
+    text-decoration: none;
+    color: rgb(45, 62, 81);
+    margin: 0 1%;
+    margin-top: 100%;
+ }
+ 
+ a.links:hover {
+    color: #ca1313;
+    transition: 0.2s;
+ }
+ 
+ h1, h3 {
+    color: yellow;
+ }
+
+ @media (max-width: 1200px) {
+    #seçao {
+   width: 100%
+   }
+   
+}
